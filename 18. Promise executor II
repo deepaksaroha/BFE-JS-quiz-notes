@@ -1,0 +1,3 @@
+Promise.resolve(a)
+If a is a value then a promise is returned which will be resolved with that a.
+If a is a promise then a this promise itself is returned istead of returning a new promise. That is the reference to the promise object that was passed itself is returned.
