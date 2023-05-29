@@ -1,0 +1,13 @@
+obj.b() is same as (obj.b)()
+If be is a function both will call the function in the same way.
+If b is not a function both will result in type error.
+
+a = obj.b
+a()
+calling a function like this makes the this inside the function loose reference of obj.
+
+Arrow function doesn't have its own this, it uses its outer scope's this.
+
+Calling arrow function by explicitely providing context using call or apply like
+a.call({}) or a.apply({})
+does not change the value of this inside arrow function. It still uses its parent's scope.
