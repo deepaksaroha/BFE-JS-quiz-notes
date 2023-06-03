@@ -1,0 +1,17 @@
++ If any of the operand is not a number, + converts all operands to string and concatenates.
+
+- converts all operands to numbers if required
+
+[].toString() = '' -> empty array converts to empty string
+[1].toString() = '1' -> array with single element converts to string with the element
+[[[1]]].toString() = '1' -> array with single element nested to any depth converts to string with the element
+({}).toString() = '[object Object]' -> empty object converts to string '[object Object]'
+({a:2, b:1}).toString() = '[object Object]' -> any object converts to string '[object Object]'
+({a:2, b:1, toString: ()=>'anything'}).toString() = 'anything' -> object with implemented toString converts to returned value from the toString
+
+Number([]) = 0
+Number([1]) = 1
+Number([[[1]]]) = 1
+Number({}) = NaN
+
+
