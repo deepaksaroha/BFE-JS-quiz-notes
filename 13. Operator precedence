@@ -1,0 +1,3 @@
+==, >, <, >=, <=  ->  apply left to right in order of occurence
+
+if one operand is boolean and other is number then covert to number.
